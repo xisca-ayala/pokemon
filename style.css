@@ -1,0 +1,27 @@
+
+form{
+    background-color: rgb(180, 179, 179);
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+
+}
+
+h4{
+    font-size: 20px;
+}
+
+.cardBox{
+    background-color: rgb(249, 248, 248);
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-bottom: 40vh;
+
+
+}
