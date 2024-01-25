@@ -6,21 +6,15 @@ class pokemon{
     }
 }
 
-
 const apiButton = document.getElementById('apiButton');
-
-
 apiButton.addEventListener('click', getPokemon);
 
 function getPokemon(){
     const searchInput = document.getElementById('searchInput').value; 
-    
     const pokeName = document.getElementById('pokeName');
     const pokePhoto = document.getElementById('pokePhoto');
     const pokeAbilities = document.getElementById('pokeAbilities')
     const pokeId = document.getElementById('pokeId');
-
-    console.log(searchInput); 
 
     let url= "https://pokeapi.co/api/v2/pokemon/" + searchInput;
 
@@ -28,7 +22,6 @@ function getPokemon(){
             headers: {"Content-type": "application/json; charset = UTF-8"},
             method: "GET"
         }
-
 
     fetch(url, param)
         .then(res=>{
